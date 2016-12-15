@@ -1,6 +1,7 @@
 # Sonatype Nexus3 Docker: sonatype/nexus3
 
 A Dockerfile for Sonatype Nexus Repository Manager 3, based on CentOS.
+Modified to start with the karaf console enabled.
 
 * [Notes](#notes)
   * [Persistent Data](#persistent-data)
@@ -10,7 +11,7 @@ A Dockerfile for Sonatype Nexus Repository Manager 3, based on CentOS.
 To run, binding the exposed port 8081 to the host.
 
 ```
-$ docker run -d -p 8081:8081 --name nexus sonatype/nexus3
+$ docker run -i -t -p 8081:8081 --name nexus sonatype/nexus3
 ```
 
 To test:
